@@ -172,26 +172,16 @@ function getSidebar(locale, language) {
         path: `${locale === "" ? "/" : locale}`,
         collapsable: true,
       },
-      /*
       {
         title: "Quick Start",
-        path: `${locale}/quickstart/quickstart`,
+        path: `${locale}/quickstart/quickstart-polkadot`,
         collapsable: true,
         children: [
-          {
-            title: "Quick Start Guide",
-            path: `${locale}/quickstart/quickstart`,
-            collapsable: true,
-            children: [
-              `${locale}/quickstart/quickstart.md`
-            ],
-          },
-        ],
-      },
-      */
-      {
-        title: "Quick Start",
-        path: `${locale}/quickstart/quickstart.md`,
+          `${locale}/quickstart/quickstart-polkadot.md`,
+          `${locale}/quickstart/quickstart-avalanche.md`,
+          `${locale}/quickstart/quickstart-cosmos.md`,
+          `${locale}/quickstart/quickstart-terra.md`,
+        ]
       },
       {
         title: "Build",
@@ -222,6 +212,7 @@ function getSidebar(locale, language) {
           `${locale}/run_publish/ipfs.md`,
           `${locale}/run_publish/aggregate.md`,
           `${locale}/run_publish/subscription.md`,
+          `${locale}/run_publish/historical.md`,
           `${locale}/run_publish/references.md`,
         ],
       },
